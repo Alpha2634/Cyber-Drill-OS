@@ -5,7 +5,7 @@ Frontend (retro CRT arcade terminal) + backend (scoring, timer, progress, valida
 ## Run in VS Code
 1. File > Open Folder... and choose this `CyberDrill` folder.
 2. Open the terminal (Ctrl+`) and run `npm start` (or press Ctrl+Shift+B).
-3. Open http://localhost:3000. The game is served by the same server.
+3. Open https://cyber-training-simulator.bonto.page/. The game is served by the same server.
 
 Requires Node.js 20+. There is nothing to install (no dependencies). Run `npm test` for the 16 backend tests.
 
@@ -24,7 +24,7 @@ CyberDrill/
 - On load it creates a player automatically and keeps the token in `localStorage` (`cd_token`).
 - Incidents, the 60 s timer, hints, scoring and feedback all come from the API. The server is the source of truth for time and score.
 - Offline fallback: if the server is not reachable (for example you double-click `public/index.html`), the boot screen says `OFFLINE (LOCAL MODE)` and the original built-in incidents are used.
-- Using VS Code Live Server (port 5500) also works: the frontend then calls http://localhost:3000, so the backend must be running.
+- Using VS Code Live Server (port 5500) also works: the frontend then calls https://cyber-training-simulator.bonto.page/, so the backend must be running.
 - To reset your progress: delete `data/db.json` and clear the site's localStorage.
 
 Original frontend notes are in `public/FRONTEND_README.md`. The backend documentation follows.
@@ -39,7 +39,7 @@ validation of AI responses.
 Zero dependencies. Requires Node 20+.
 
 ```bash
-npm start            # http://localhost:3000   (PORT=... to change)
+npm start            # https://cyber-training-simulator.bonto.page/   (PORT=... to change)
 npm test             # 16 automated tests
 ```
 
