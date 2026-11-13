@@ -1,0 +1,12 @@
+{
+  "name": "cyber-drill-backend",
+  "version": "1.0.0",
+  "description": "Backend for the 60-second cyber incident decision trainer (scoring, timer, progress, validated AI feedback)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
